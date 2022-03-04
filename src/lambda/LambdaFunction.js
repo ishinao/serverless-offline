@@ -189,6 +189,8 @@ export default class LambdaFunction {
       LD_LIBRARY_PATH:
         '/usr/local/lib64/node-v4.3.x/lib:/lib64:/usr/lib64:/var/runtime:/var/runtime/lib:/var/task:/var/task/lib',
       NODE_PATH: '/var/runtime:/var/task:/var/runtime/node_modules',
+      AWS_ACCESS_KEY_ID: process.env.AWS_ACCESS_KEY_ID,
+      AWS_SECRET_ACCESS_KEY: process.env.AWS_SECRET_ACCESS_KEY,
     }
   }
 
